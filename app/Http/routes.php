@@ -19,6 +19,12 @@ Route::get('/services', [
     'uses' => 'ServiceController@index', 'as' => 'services.index'
 ]);
 
-Route::get('/services/{id}', [
+Route::get('/services/{slug}', [
     'uses' => 'ServiceController@show', 'as' => 'services.show'
-]) -> where(['id' => '[0-9]+']);
+]) -> where(['slug' => '[_a-z]+']);
+
+Route::post('/ajax-get-two', [
+    'uses' => 'ServiceController@ajax', 'as' => 'services.get-two'
+]);
+
+

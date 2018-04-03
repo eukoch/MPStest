@@ -9,7 +9,7 @@
                jQuery&nbsp;3.3.1, шрифт Roboto и набор иконок от Font Awesome 5 (используются в футере проекта).
             </p>
             <p>
-                
+                <a href="{{ route('services.index') }}">Страница УСЛУГИ</a>
             </p>
         </div>
     </div>
